@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Claus Brabrand</title>
+  <meta name="description" content="Claus Brabrand — Full Professor at the IT University of Copenhagen and Head of the Center for Computing Education Research." />
+  <link rel="stylesheet" href="homepage.css" />
+  <script>
+function copyBibtex(){
+  const text = document.getElementById("bibtex").innerText;
+
+  navigator.clipboard.writeText(text).then(() => {
+    const btn = document.querySelector(".btn-copy");
+    btn.textContent = "Copied!";
+    setTimeout(() => btn.textContent = "Copy BibTeX", 1500);
+  });
+}
+  </script>
+</head>
+<body>
+  <header>
+  <div class="header-row">
+
+    <!-- LEFT: text -->
+    <div class="header-text">
+      <div class="kicker">
+        <span>IT University of Copenhagen</span>
+        <span aria-hidden="true">•</span>
+        <span>Center for Computing Education Research</span>
+      </div>
+
+      <h1>Claus Brabrand</h1>
+
+      <p class="subtitle">
+        Full Professor, 
+        <a href="https://en.itu.dk/Research/Sections-and-research-groups/Software-Engineering">Software Engineering Section</a> at the 
+        <a href="https://www.itu.dk/">IT University of Copenhagen</a>,<br/>
+        Head of the 
+        <a href="https://ccer.itu.dk/">Center for Computing Education Research</a> (CCER).
+      </p>
+    </div>
+
+    <!-- RIGHT: logo -->
+    <div class="header-logo">
+      <a href="https://ccer.itu.dk/">
+        <img src="CCER-logo.png" alt="CCER logo">
+      </a>
+    </div>
+
+  </div>
+</header>
+
+  <main>
+    <section class="card" id="about"><div class="inner hero">
+      <img class="portrait" alt="Claus Brabrand" src="CB-2022.jpg" />
+      <div>
+        <p class="profile-name">Claus Brabrand, <span class="affil">Ph.D.</span></p>
+        <p class="muted">My research is exclusively focused on <b>Computing Education Research</b> (CER), following earlier research on <b>variability and software product lines</b> (2010s), and originally <b>programming languages</b> and <b>web technology</b> (2000s).</p>
+        <div class="profile-links">
+          <a class="btn" href="CV-claus-brabrand.pdf">CV</a>
+          <a class="btn" href="https://www.linkedin.com/in/brabrand/">LinkedIn</a>
+          <a class="btn" href="https://scholar.google.com/citations?user=akIMnP8AAAAJ">Google Scholar</a>
+          <a class="btn" href="https://dblp.org/pid/61/6274.html">DBLP</a>
+          <a class="btn" href="https://www.imdb.com/name/nm8039384/">IMDb</a>
+          <a class="btn" href="https://vbdb.bitbucket.io">VBDb</a>
+        </div>
+      </div>
+    </div></section>
+
+<section class="hero-award">
+  <div class="hero-inner">
+
+    <!-- TEXT -->
+    <div class="hero-text">
+      <h2>Danish National Teaching Award</h2>
+
+      <p class="hero-lead">
+        Recipient of the (first) <strong><a href="https://www.kongehuset.dk/foto-video/uddeling-af-undervisningsprisen-2020">Danish National Teaching Award (2020)</a></strong>,<br/>
+        presented by H.M. Queen Mary of Denmark.
+      </p>
+
+      <p class="hero-sub">
+        Awarded to 2 out of ~18,000 university teachers nationwide (500,000 DKK ≈ 67,000 EUR).
+      </p>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="hero-img">
+      <img src="Undervisningsprisen-2020-CB-QM.jpg" alt="Danish National Teaching Award 2020">
+    </div>
+
+  </div>
+</section>
+
+    <section class="card section" id="film"><div class="inner film">
+      <div>
+        <h2>Short film: <a href="https://ttuu.itu.dk/">Teaching Teaching &amp; Understanding Understanding</a></h2>
+        <p><em>Writer</em>, <em>director</em>, <em>producer</em>, and <em>co-editor</em>. <div class="bibtex-block">
+  <button class="btn-copy" onclick="copyBibtex()">Copy BibTeX</button>
+
+  <pre id="bibtex" class="bibtex">
+@misc{brabrand2006ttuu,
+  author    = {Claus Brabrand and Jacob Andersen},
+  title     = {Teaching Teaching \& Understanding Understanding},
+  year      = {2006},
+  note      = {19-minute award-winning educational short film},
+  publisher = {Aarhus University Press},
+  url       = {https://ttuu.itu.dk/}
+}
+  </pre>
+</div></p>
+        <p>20-minute award-winning short film about university teaching. It is based on The Theory of <a href="https://www.johnbiggs.com.au/academic/constructive-alignment/">Constructive Alignment</a> and <a href="https://www.johnbiggs.com.au/academic/solo-taxonomy/">The SOLO Taxonomy</a> developed by <a href="https://www.johnbiggs.com.au/">Professor John Biggs</a>.</p>
+      </div>
+      <a href="https://ttuu.itu.dk/"><img alt="Teaching Teaching & Understanding Understanding" src="tt-uu.png" /></a>
+    </div></section>
+
+    <section class="card section" id="publications"><div class="inner">
+      <h2>Publications</h2>
+      <div class="navchips">
+        <a class="navchip cer" href="#2020s">Computing Education Research (2020s)</a> 
+        <a class="navchip var" href="#2010s">Variability &amp; Product Lines (2010s)</a>
+        <a class="navchip plr" href="#2000s">Programming Languages (2000s)</a>
+      </div>
+
+      <h3 id="2020s">2020s: <a class="cer" href="#2020s">Computing Education Research</a> <span class="affil">(exclusively)</span></h3>
+      <ul class="pub-list">
+        <li class="pub cer"><a class="pub-title" href="">Recursion vs Iteration: Activity-Sensitive differences across Use–Modify–Create Tasks in CS1</a><div class="pub-meta">Ellen Yue Daetz, Louise Meier Carlsen, Claus Brabrand. ICER 2026, To appear (2026).</div></li>
+        <li class="pub cer"><a class="pub-title" href="">Transforming Code Patterns into Procedural Abstractions: An Empirical Study of De-com-po-si-tion</a><div class="pub-meta">Georginana Haldeman, Claus Brabrand, Paul Denny. ITiCSE 2026, To appear (2026).</div></li>
+        <li class="pub cer"><a class="pub-title" href="">Computing Education when Writing Code is No Longer the Challenge</a><span class="tag genai">GenAI</span>
+<div class="pub-meta">Ibrahim Albluwi, Dennis Bouvier, Claus Brabrand, Michelle Craig, Rodrigo Duran, Chris Hundhausen, Colleen Lewis, Kevin Lin, Andrew Luxton-Reilly, Leo Porter, Karen Reid, David H. Smith IV, Claudia Szabo, Titus Winters, Daniel Zingaro. Communications of the ACM (CACM). To appear. (2026).</div></li>
+        <li class="pub cer"><a class="pub-title" href="">Programming’s Place in Higher Education through Educator and Institutional Perspectives</a><div class="pub-meta">Sebastian Mateos Nicolajsen, Louise Meier Carlsen, Claus Brabrand. EDUCON 2026.</div></li>
+        <li class="pub cer"><a class="pub-title" href="https://conf.researchr.org/details/icse-2026/icse-2026-software-engineering-education-and-training--seet-/4/Use-Modify-Create-turned-Upside-Down-by-AI-Towards-Higher-Level-Competences-via-th">Use-Modify-Create turned &quot;Upside-Down&quot; by AI: Towards Higher-Level Competences via the Scientific Method</a><span class="tag genai">GenAI</span>
+<div class="pub-meta">Claus Brabrand, Sue Sentance. Proc. of the 48th International Conference on Software Engineering, ICSE 2026.</div></li>
+        <li class="pub cer"><a class="pub-title" href="https://drops.dagstuhl.de/entities/document/10.4230/DagRep.15.7.253">“Andy’s Axe” as a Guiding Principle for our Stance on AI-in-Education (for Computing)</a><span class="tag genai">GenAI</span>
+<div class="pub-meta">Ibrahim Albluwi, Dennis Bouvier, Claus Brabrand, Michelle Craig, Rodrigo Duran, Chris Hundhausen, Kevin Lin, Leo Porter, Karen Reid, Andrew Luxton-Reilly, David H. Smith IV, Claudia Szabo, Shubbhi Taneja, Michel Wermelinger, Titus Winters, Daniel Zingaro. Proc. of Dagstuhl Seminar 25311 on Generative AI in Programming Education (2026).</div></li>
+        <li class="pub cer"><a class="pub-title" href="https://drops.dagstuhl.de/entities/document/10.4230/DagRep.15.7.253">What Does It Mean to Program in the Age of AI?</a><span class="tag genai">GenAI</span>
+<div class="pub-meta">Claus Brabrand. Proc. of Dagstuhl Seminar 25311 on Generative AI in Programming Education (2026).</div></li>
+        <li class="pub cer"><a class="pub-title" href="https://dl.acm.org/doi/10.1145/3769994.3770039">Prompt First, Precision Later: Reviving the Vision of Natural Language Programming for Computing Education</a><span class="tag genai">GenAI</span>
+<div class="pub-meta">Brent Reeves, James Prather, Paul Denny, Juho Leinonen, Andrew Luxton-Reilly, Stephen MacNeil, Sebastian Mateos Nicolajsen, Claus Brabrand. Proc. 25th Koli Calling Int’l Conf on Computing Education Research, Koli Calling 2025. (2025).</div></li>
+        <li class="pub cer"><a class="pub-title" href="HDI.pdf">Temporal Correlation between Women studying Computing &amp; Human Development Index (30 years of data)</a><span class="tag diversity">Diversity</span><div class="pub-meta">Louise Meier Carlsen, Maria Stisen Flyger, Josefine Marie Andersen, Nanna Inie, Claus Brabrand. To appear, Proc. 55th Frontiers in Education Conference, FIE 2025. (2025).</div></li>
+        <li class="pub cer"><a class="pub-title" href="https://dl.acm.org/doi/10.1145/3713068">What is Programming? ...and What is Programming in the Age of AI?</a><span class="tag genai">GenAI</span>
+<div class="pub-meta">Sebastian Mateos Nicolajsen, Claus Brabrand. Communications of the ACM (CACM). (2025).</div></li>
+        <li class="pub cer"><a class="pub-title" href="https://dl.acm.org/doi/pdf/10.1145/3641554.3701808">Circle of Life: Microworld Project at the end of CS1</a><div class="pub-meta">Sebastian Mateos Nicolajsen, Michael Caspersen, Claus Brabrand. SIGCSE Technical Symposium, SIGCSE-TS 2025. (2025).</div></li>
+        <li class="pub cer"><a class="pub-title" href="HE-2024.pdf">Programming Education across Disciplines: a Nationwide Study of Danish Higher Education</a><div class="pub-meta">Sebastian Mateos Nicolajsen, Sofie Kramshøi Nielsen, Louise Meier Carlsen, Claus Brabrand. Higher Education. (2024).</div></li>
+        <li class="pub cer"><a class="pub-title" href="FIE-2024.pdf">Visualizing the Conceptual Framework of Object Orientation for Novice Programmers</a><div class="pub-meta">Jakob Staugaard, Jens Bennedsen, Christoph Seidl, Sebastian Nicolajsen, Mathias Fink, Claus Brabrand. Proc. 54th Frontiers in Education Conference, FIE 2024. (2024).</div></li>
+        <li class="pub cer"><a class="pub-title" href="ICER-2024.pdf">Invisible Women in IT: Examining Gender Representation in K-12 ICT Teaching Materials</a><span class="tag diversity">Diversity</span><div class="pub-meta">Ingrid Maria Christensen, Melissa Høegh Marcher, Nanna Inie, Claus Brabrand. ACM Conference on International Computing Education Research, ICER 2024.</div></li>
+        <li class="pub cer"><a class="pub-title" href="https://www.sciencedirect.com/science/article/pii/S0164121223002820">Programming under the Influence: On the Effect of Heat, Noise, and Alcohol on Programmers</a><div class="pub-meta">Claus Brabrand, Nanna Inie, Paolo Tell. Journal of Systems &amp; Software 2024.</div></li>
+        <li class="pub cer"><a class="pub-title" href="Koli-2023.pdf">Feedback on Student Programming Exercises: Teaching Assistants vs Automated Assessment Tool</a><span class="tag diversity">Diversity</span><div class="pub-meta">Nynne Grauslund Kristiansen, Sebastian Mateos Nicolajsen, Claus Brabrand. Proc. 22nd Koli Calling Int’l Conf on Computing Education Research, Koli Calling 2023. (2023).</div></li>
+        <li class="pub cer"><a class="pub-title" href="FIE-2023.pdf">Gender Differences in the Group Dynamics of Smaller CS1 Project Groups</a><span class="tag diversity">Diversity</span><div class="pub-meta">Bjørn Hjorth Westh, Nanna Inie, Louise Barkhuus, Claus Brabrand. Proc. 53rd Frontiers in Education Conference, FIE 2023. (2023).</div></li>
+        <li class="pub cer"><a class="pub-title" href="koli-2022.pdf">On the Effect of Onboarding Computing Students without Programming-Confidence or -Experience</a><span class="tag diversity">Diversity</span><div class="pub-meta">Pawel Grabarczyk, Sebastian Mateos Nicolajsen, Claus Brabrand. Proc. 21st Koli Calling Int’l Conf on Computing Education Research, Koli Calling 2022. (2022).</div></li>
+        <li class="pub cer"><a class="pub-title" href="FIE-2022.pdf">Student Perspectives on On-site versus Online Teaching throughout the Covid-19 Pandemic</a><div class="pub-meta">Björn Thór Jónsson, Magda Pischetola, Nanna Inie, Mats Daniels, Claus Brabrand. Proc. 52nd Frontiers in Education Conference, FIE 2022. (2022).</div></li>
+        <li class="pub cer"><a class="pub-title" href="https://dl.acm.org/doi/pdf/10.1145/3502718.3524784">Computing Educational Programmes with more Women are more about PEOPLE &amp; less about THINGS</a><span class="tag diversity">Diversity</span><div class="pub-meta">Pawel Grabarczyk, Alma Freiesleben, Amanda Bastrup, Claus Brabrand. Proc. 27th ACM Conf. on Inno. &amp; Tech. in Computer Science Education, ITiCSE. (2022).</div></li>
+        <li class="pub cer"><a class="pub-title" href="ICER2021-retention.pdf">Computing Educational Activities Involving People Rather Than Things Appeal More to Women (CS1 Appeal Perspective)</a><span class="tag diversity">Diversity</span><div class="pub-meta">Melissa Høegh Marcher, Ingrid Maria Christensen, Pawel Grabarczyk, Therese Graversen, Claus Brabrand. ACM Conference on International Computing Education Research, ICER 2021: 145-156. (2021).</div></li>
+        <li class="pub cer"><a class="pub-title" href="ICER2021-recruitment.pdf">Computing Educational Activities Involving People Rather Than Things Appeal More to Women (Recruitment Perspective)</a><span class="tag diversity">Diversity</span><div class="pub-meta">Ingrid Maria Christensen, Melissa Høegh Marcher, Pawel Grabarczyk, Therese Graversen, Claus Brabrand. ACM Conference on International Computing Education Research, ICER 2021: 127-144. (2021).</div></li>
+        <li class="pub cer"><a class="pub-title" href="ICER2021-recruitment.pdf">How Interaction Influences Academic Reading: A Comparison of Paper and Laptop</a><div class="pub-meta">Nanna Inie, Louise Barkhuus, Claus Brabrand. Social Sciences &amp; Humanities Open. 21pp. (2021).</div></li>
+        <li class="pub cer"><a class="pub-title" href="Koli2021-CT-Perspectives.pdf">Three +1 Perspectives on Computational Thinking</a><div class="pub-meta">Sebastian Mateos Nicolajsen, Magda Pischetola, Pawel Grabarczyk, Claus Brabrand. Proc. 21st Koli Calling International Conference on Computing Education Research, Koli Calling 2021: 2:1-2:11. (2021).</div></li>
+      </ul>
+
+      <h3 id="2010s">2010s: <a class="var" href="#2010s">Variability &amp; Software Product Lines</a> <span class="affil">(predominantly)</span></h3>
+      <ul class="pub-list">
+        <li class="pub var"><a class="pub-title" href="https://www.researchgate.net/publication/331794646_Finding_suitable_variability_abstractions_for_lifted_analysis">Finding Suitable Variability Abstractions for Lifted Analysis</a><div class="pub-meta">Aleksandar S. Dimovski, Claus Brabrand, Andrzej Wasowski. Formal Aspects of Computing 31(2): 231-259 (2019).</div></li>
+        <li class="pub var"><a class="pub-title" href="https://www.sciencedirect.com/science/article/pii/S0167642318300583">Variability Abstractions for Lifted Analyses</a><div class="pub-meta">Aleksandar S. Dimovski, Claus Brabrand, Andrzej Wasowski. Science of Computer Programming, SCP. 159: 1-27 (2018).</div></li>
+        <li class="pub cervar"><a class="pub-title" href="https://dl.acm.org/doi/10.1145/3149119">Variability Bugs in Highly Configurable Systems: A Qualitative Analysis</a><div class="pub-meta">Iago Abal, Jean Melo, Stefan Stanciulescu, Claus Brabrand, Márcio Ribeiro, Andrzej Wasowski. ACM Transactions on Software Engineering and Methodology, TOSEM. 26(3): 10:1-10:34 (2018).</div></li>
+        <li class="pub var"><a class="pub-title" href="https://arxiv.org/pdf/1701.08114.pdf">Effective Analysis of C Programs by Rewriting Variability</a><div class="pub-meta">Alexandru Florin Iosif-Lazar, Jean Melo, Aleksandar S. Dimovski, Claus Brabrand, Andrzej Wasowski. The Art, Science, and Engineering of Programming. 1(1): 1 (2017).</div></li>
+        <li class="pub var"><a class="pub-title" href="https://www.researchgate.net/figure/An-overview-of-our-technique-for-efficient-family-based-model-checking-Instead-of_fig1_303555738">Efficient Family-Based Model Checking via Variability Abstractions</a><div class="pub-meta">Aleksandar S. Dimovski, Ahmad Salim Al-Sibahi, Claus Brabrand, Andrzej Wasowski. International Journal on Software Tools for Technology Transfer. 19(5): 585-603 (2017).</div></li>
+        <li class="pub cervar"><a class="pub-title" href="https://www.researchgate.net/publication/315693160_Variability_through_the_Eyes_of_the_Programmer">Variability through the Eyes of the Programmer</a><div class="pub-meta">Jean Melo, Fabricio Batista Narcizo, Dan Witzner Hansen, Claus Brabrand, Andrzej Wasowski. Proc. of the 25th International Conference on Program Comprehension, ICPC 2017: 34-44. (2017).</div></li>
+        <li class="pub var"><a class="pub-title" href="https://www.researchgate.net/publication/312209804_Effective_Bug_Finding_in_C_Programs_with_Shape_and_Effect_Abstractions">Effective Bug Finding in C Programs with Shape and Effect Abstractions</a><div class="pub-meta">Iago Abal, Claus Brabrand, Andrzej Wasowski. Proc. of VMCAI 2017: 34-54. (2017).</div></li>
+        <li class="pub var"><a class="pub-title" href="https://www.researchgate.net/publication/312209804_Effective_Bug_Finding_in_C_Programs_with_Shape_and_Effect_Abstractions">Finding Suitable Variability Abstractions for Family-Based Analysis</a><div class="pub-meta">Aleksandar S. Dimovski, Claus Brabrand, Andrzej Wasowski. Proc. FM 2016: 217-234. (2016).</div></li>
+        <li class="pub cervar"><a class="pub-title" href="https://www.researchgate.net/publication/299356193_How_Does_the_Degree_of_Variability_Affect_Bug_Finding">How does the Degree of Variability affect Bug Finding?</a><div class="pub-meta">Jean Melo, Claus Brabrand, Andrzej Wasowski. Proc. ICSE 2016: 679-690. (2016).</div></li>
+        <li class="pub cervar"><a class="pub-title" href="https://www.researchgate.net/publication/299355740_A_Quantitative_Analysis_of_Variability_Warnings_in_Linux">A Quantitative Analysis of Variability Warnings in Linux</a><div class="pub-meta">Jean Melo, Elvis Flesborg, Claus Brabrand, Andrzej Wasowski. Proc. VaMoS 2016: 3-8. (2016).</div></li>
+        <li class="pub var"><a class="pub-title" href="https://dl.acm.org/doi/10.1016/j.scico.2015.04.005">Systematic Derivation of Correct Variability-Aware Program Analyses</a><div class="pub-meta">Jan Midtgaard, Aleksandar S. Dimovski, Claus Brabrand, Andrzej Wasowski. Science of Computer Programming, SCP 105: 145-170 (2015).</div></li>
+        <li class="pub var"><a class="pub-title" href="https://drops.dagstuhl.de/storage/00lipics/lipics-vol037-ecoop2015/LIPIcs.ECOOP.2015.247/LIPIcs.ECOOP.2015.247.pdf">Variability Abstractions: Trading Precision for Speed in Family-Based Analyses</a><div class="pub-meta">Aleksandar S. Dimovski, Claus Brabrand, Andrzej Wasowski. ECOOP 2015: 247-270. (2015).</div></li>
+        <li class="pub var"><a class="pub-title" href="spin-2015.pdf">Family-Based Model Checking Without a Family-Based Model Checker</a><div class="pub-meta">Aleksandar S. Dimovski, Ahmad Salim Al-Sibahi, Claus Brabrand, Andrzej Wasowski. SPIN 2015: 282-299. (2015).</div></li>
+        <li class="pub var"><a class="pub-title" href="https://dl.acm.org/doi/10.1145/2791060.2791119">Family-Based Model Checking using Off-the-Shelf Model Checkers</a><div class="pub-meta">Aleksandar S. Dimovski, Ahmad Salim Al-Sibahi, Claus Brabrand, Andrzej Wasowski. SPLC: 397. (2015).</div></li>
+        <li class="pub var"><a class="pub-title" href="https://link.springer.com/book/10.1007/978-3-319-11493-4">Emergent Interfaces for Feature Modularization</a><div class="pub-meta">Márcio Ribeiro, Paulo Borba, Claus Brabrand. Springer Briefs in Computer Science, Springer 2014.</div></li>
+        <li class="pub plr"><a class="pub-title" href="https://dblp.org/db/journals/scp/scp87.html">Preface to the Special Section on Language Descriptions, Tools, and Applications (LDTA 2011)</a><div class="pub-meta">Claus Brabrand, Eric Van Wyk. Science of Computer Programming, SCP. 87: 1 (2014).</div></li>
+        <li class="pub var"><a class="pub-title" href="42-bugs.pdf">42 Variability Bugs in the Linux Kernel: A Qualitative Study</a><div class="pub-meta">Iago Abal, Claus Brabrand, Andrzej Wasowski. ASE 2014, pp. 421-432. (2014).</div></li>
+        <li class="pub var"><a class="pub-title" href="TR-2014-170.pdf">Systematic Derivation of Static Analyses for Software Product Lines</a><div class="pub-meta">Jan Midtgaard, Claus Brabrand, Andrzej Wasowski. MODULARITY 2014, p. 181-192. (2014).</div></li>
+        <li class="pub var"><a class="pub-title" href="https://dl.acm.org/doi/10.1145/2499370.2491976">SPL<sup>LIFT</sup>: Statically Analyzing Software Product Lines in Minutes Instead of Years</a><div class="pub-meta">Eric Bodden, Tarsis Toledo, Marcio Ribeiro, Claus Brabrand, Paulo Borba, Mira Mezini. Software Engineering 2014: 81-82. (2014).</div></li>
+        <li class="pub plr"><a class="pub-title" href="banana-algebra-journal-version.pdf">Banana Algebra: Compositional Syntactic Language Extension</a><div class="pub-meta">Jacob Andersen, Claus Brabrand, David R. Christensen. Science of Computer Programming, Vol. 78(10), p. 1845-1870. (2013).</div></li>
+        <li class="pub var"><a class="pub-title" href="http://www.bodden.de/pubs/bmb+13spllift.pdf">SPL<sup>LIFT</sup>: Statically Analyzing Software Product Lines in Minutes Instead of Years</a><div class="pub-meta">Eric Bodden, Tarsis Toledo, Marcio Ribeiro, Claus Brabrand, Paulo Borba, Mira Mezini. PLDI, p. 355-364. (2013).</div></li>
+        <li class="pub var"><a class="pub-title" href="taosd.pdf">Intraprocedural Dataflow Analysis for Software Product Lines</a><div class="pub-meta">Claus Brabrand, Márcio Ribeiro, Társis Tolêdo, Johnny Winter, Paulo Borba. TAOSD. Vol. 10, p. 73-108. (2013).</div></li>
+        <li class="pub plr"><a class="pub-title" href="scraping.pdf">WebSelF: A Web Scraping Framework</a><div class="pub-meta">Jakob G. Thomsen, Erik Ernst, Claus Brabrand, Michael Schwartzbach. ICWE 2012, p. 347-361. (2012).</div></li>
+        <li class="pub var"><a class="pub-title" href="emergo.pdf">Emergo: A Tool for Improving Maintainability of Preprocessor-based Product Lines</a><div class="pub-meta">Márcio Ribeiro, Társis Tolêdo, Johnni Winther, Claus Brabrand, Paulo Borba. AOSD 2012 Demos. (2012).</div></li>
+        <li class="pub var"><a class="pub-title" href="aosd-2012.pdf">Intraprocedural Dataflow Analysis for Software Product Lines</a><div class="pub-meta">Claus Brabrand, Márcio Ribeiro, Társis Tolêdo, Paulo Borba. MODULARITY: AOSD 2012, p. 13-24. (2012).</div></li>
+        <li class="pub var"><a class="pub-title" href="gpce-2011.pdf">On the Impact of Feature Dependencies when Maintaining Preprocessor-based Software Product Lines</a><div class="pub-meta">Márcio Ribeiro, Felipe Queiroz, Paulo Borba, Társis Tolêdo, Claus Brabrand, Sérgio Soares. GPCE, p. 23-32. (2011).</div></li>
+        <li class="pub var"><a class="pub-title" href="cbsoft-2011.pdf">A Tool for Improving Maintainability of Preprocessor-based Product Lines</a><div class="pub-meta">Márcio Ribeiro, Társis Tolêdo, Paulo Borba, Claus Brabrand. CBSoft. (2011).</div></li>
+      </ul>
+
+      <h3 id="2000s">2000s: <a class="plr" href="#2000s">Programming Languages</a> <span class="affil">(predominantly)</span></h3>
+      <ul class="pub-list">
+        <li class="pub plr"><a class="pub-title" href="https://dl.acm.org/doi/proceedings/10.1145/1988783">Proceedings of the of the 11th Workshop on Language Descriptions, Tools and Applications, LDTA 2011</a><div class="pub-meta">Claus Brabrand, Eric Van Wyk. ACM 2011, ISBN 978-1-4503-0665-2. (2011).</div></li>
+        <li class="pub plr"><a class="pub-title" href="banana-algebra.pdf">Syntactic Language Extension via an Algebra of Languages and Transformations</a><div class="pub-meta">Jacob Andersen, Claus Brabrand. ENTCS 253(7): 19-35 (2010).</div></li>
+        <li class="pub plr"><a class="pub-title" href="ambiguity-journal.pdf">Analyzing Ambiguity of Context-Free Grammars</a><div class="pub-meta">Claus Brabrand, Robert Giegerich, Anders Møller. SCP, Vol. 75(3), p. 176-191. (2010).</div></li>
+        <li class="pub plr"><a class="pub-title" href="regexp.pdf">Typed and Unambiguous Pattern Matching on Strings using Regular Expressions</a><div class="pub-meta">Claus Brabrand, Jakob G. Thomsen. PPDP, p. 243-254. (2010).</div></li>
+        <li class="pub plr"><a class="pub-title" href="https://dl.acm.org/doi/proceedings/10.1145/1868281">Proceedings of the of the 10th Workshop on Language Descriptions, Tools and Applications, LDTA 2010</a><div class="pub-meta">Claus Brabrand, Pierre-Etienne Moreau. ACM 2010, ISBN 978-1-4503-0063-6. (2010).</div></li>
+        <li class="pub cer"><a class="pub-title" href="ITiCSE-2009.pdf">Analyzing CS Competencies using the SOLO Taxonomy</a><div class="pub-meta">Claus Brabrand, Bettina Dahl. Keynote for ITiCSE 2009. (2009).</div></li>
+        <li class="pub plr"><a class="pub-title" href="banana-algebra.pdf">Syntactic Language Extension via an Algebra of Languages and Transformations</a><div class="pub-meta">Jacob Andersen, Claus Brabrand. LDTA, p. 67-85. (2009).</div></li>
+        <li class="pub cer"><a class="pub-title" href="progression.pdf">Using the SOLO Taxonomy to Analyze Competence Progression of University Science Curricula</a><div class="pub-meta">Claus Brabrand, Bettina Dahl. Higher Education, Vol. 58(4), p. 531-549. (2009).</div></li>
+        <li class="pub cer"><a class="pub-title" href="teaconc.pdf">Constructive Alignment for Teaching Model-Based Design for Concurrency</a><div class="pub-meta">Claus Brabrand. ToPNoC, Vol. 1(1), p. 1-18. (2008).</div></li>
+        <li class="pub plr"><a class="pub-title" href="xsugar-journal.pdf">Dual Syntax for XML Languages</a><div class="pub-meta">Claus Brabrand, Anders Møller, Michael Schwartzbach. Information Systems, Vol. 33(4), p. 385-406. (2008).</div></li>
+        <li class="pub cer"><a class="pub-title" href="koli-2007-keynote.pdf">Constructive Alignment and The SOLO Taxonomy: A Comparative Study of University Competencies in Computer Science vs. Mathematics</a><div class="pub-meta">Claus Brabrand, Bettina Dahl. CRPIT, Vol. 88. (2008).</div></li>
+        <li class="pub cer"><a class="pub-title" href="teaconc.pdf">Constructive Alignment for Teaching Model-Based Design for Concurrency. Invited Paper for TeaConc'07</a><div class="pub-meta">Claus Brabrand. TeaConc'07. (2007).</div></li>
+        <li class="pub plr"><a class="pub-title" href="metafront.pdf">The metafront System: Safe and Extensible Parsing and Transformation</a><div class="pub-meta">Claus Brabrand, Michael I. Schwartzbach. Science of Computer Programming 68(1): 2-20. (2007).</div></li>
+        <li class="pub cer"><a class="pub-title" href="koli-2007-keynote.pdf">Constructive Alignment and The SOLO Taxonomy: A Comparative Study of University Competencies in Computer Science vs. Mathematics</a><div class="pub-meta">Claus Brabrand, Bettina Dahl. Keynote paper at Koli’07. (2007).</div></li>
+        <li class="pub plr"><a class="pub-title" href="ambiguity-ciaa.pdf">Analyzing Ambiguity of Context-Free Grammars</a><div class="pub-meta">Claus Brabrand, Robert Giegerich, Anders Møller. CIAA, p. 214-225. (2007).</div></li>
+        <li class="pub cer"><a class="pub-title" href="https://ttuu.itu.dk/">Teaching Teaching &amp; Understanding Understanding. 19-minute award-winning educational short-film</a><div class="pub-meta">Claus Brabrand, Jacob Andersen, Doina Bucur, Rune Thorbek. Aarhus University Press. DVD. Epilogue by John Biggs. (2006).</div></li>
+        <li class="pub plr"><a class="pub-title" href="xsugar-dblp.pdf">Dual Syntax for XML Languages</a><div class="pub-meta">Claus Brabrand, Anders Møller, Michael Schwartzbach. DBPL, p.27-41. (2005).</div></li>
+        <li class="pub plr"><a class="pub-title" href="metafront.pdf">The metafront System: Extensible Parsing and Transformation</a><div class="pub-meta">Claus Brabrand, Michael Schwartzbach, Mads Vanggaard. ENTCS 82(3): 592-611. (2003).</div></li>
+        <li class="pub plr"><a class="pub-title" href="metafront.pdf">The metafront System: Extensible Parsing and Transformation</a><div class="pub-meta">Claus Brabrand, Michael Schwartzbach, Mads Vanggaard. LDTA, p. 67-85. (2003).</div></li>
+        <li class="pub plr"><a class="pub-title" href="dissertation.pdf">Domain Specific Languages for Interactive Web Services</a><div class="pub-meta">Claus Brabrand. Ph.D. Dissertation, BRICS International Ph.D. School, Aarhus University. (2003).</div></li>
+        <li class="pub plr"><a class="pub-title" href="bigwig.pdf">The &lt;bigwig&gt; project</a><div class="pub-meta">Claus Brabrand, Anders Møller, Michael I. Schwartzbach. ACM TOIT 2(2): 79-114. (2002).</div></li>
+        <li class="pub plr"><a class="pub-title" href="caching.pdf">Language-Based Caching of Dynamically Generated HTML</a><div class="pub-meta">Claus Brabrand, Anders Møller, Steffan Olesen, Michael I. Schwartzbach. World Wide Web 5(4): 305-324 (2002).</div></li>
+        <li class="pub plr"><a class="pub-title" href="macro.pdf">Growing Languages with Metamorphic Syntax Macros</a><div class="pub-meta">Claus Brabrand, Michael Schwartzbach. PEPM, p. 31-40. (2002).</div></li>
+        <li class="pub plr"><a class="pub-title" href="validation.pdf">Static Validation of Dynamically Generated HTML</a><div class="pub-meta">Claus Brabrand, Anders Møller, Michael Schwartzbach. PASTE, p. 38-45. (2001).</div></li>
+        <li class="pub plr"><a class="pub-title" href="powerforms.pdf">PowerForms: Declarative Client-Side Form Field Validation</a><div class="pub-meta">Claus Brabrand, Anders Møller, Mikkel Ricky, Michael I. Schwartzbach. World Wide Web 3(4): 205-214. (2000).</div></li>
+        <li class="pub plr"><a class="pub-title" href="runtime.pdf">A Runtime System for Interactive Web Services</a><div class="pub-meta">Claus Brabrand, Anders Møller, Anders Sandholm, Michael I. Schwartzbach. Journal of Computer Networks 31(11-16): 1391-1401. (1999).</div></li>
+        <li class="pub plr"><a class="pub-title" href="runtime.pdf">A Runtime System for Interactive Web Services</a><div class="pub-meta">Claus Brabrand, Anders Møller, Anders Sandholm, Michael Schwartzbach. WWW8, p. 313-323. (1999).</div></li>
+        <li class="pub plr"><a class="pub-title" href="thesis.pdf">Synthesizing Safety Controllers for Interactive Web Services</a><div class="pub-meta">Claus Brabrand. Master’s Thesis, Aarhus University (1999).</div></li>
+      </ul>
+    </div></section>
+
+    <section class="card section" id="awards"><div class="inner"><h2>Awards</h2>
+      <ul class="clean-list">
+        <li><strong>Danish National Teaching Award (2020)</strong>: Recipient of the first <a href="https://www.kongehuset.dk/foto-video/uddeling-af-undervisningsprisen-2020">Danish National Teaching Award</a>; awarded to two out of approximately 18,000 university teachers in Denmark; 500,000 DKK (€67,000 EUR), handed over by H.M. Queen of Denmark.</li>
+        <li><strong>ITU Excellence in Teaching Award (2019)</strong>: highest average student evaluation rating at ITU: 5.91 on a 1–6 scale, N=99.</li>
+        <li><strong>German IT-Security Award (runner up, 2014)</strong>: for “SPLLIFT: Statically Analyzing Software Product Lines in Minutes instead of Years”; awarded €60,000 EUR with Eric Bodden, Márcio Ribeiro, Társis Tolêdo, Paulo Borba, and Mira Mezini.</li>
+        <li><strong>Ph.D. student won dissertation award (2012)</strong>: Márcio Ribeiro won “Best Dissertation in all of Brazil 2012” in Computer Science.</li>
+        <li><strong>Best Tool Award (2011)</strong>: for “A Tool for Improving Maintainability of Preprocessor-based Product Lines” at CBSoft 2011, with Márcio Ribeiro, Társis Tolêdo, and Paulo Borba.</li>
+        <li><strong>The Golden Ratio Award (2006)</strong>: for the educational short film “Teaching Teaching &amp; Understanding Understanding”.</li>
+      </ul>
+    </div></section>
+
+    <section class="card section" id="phd-students"><div class="inner"><h2>Ph.D. students</h2>
+        <ul class="clean-list">
+          <li><a href="https://www.linkedin.com/in/sebastian-nicolajsen/"><strong>Sebastian Mateos Nicolajsen</strong></a>:<br><span class="muted">Finished 2026; co-advised with Louie Meier Carlsen, Marisa Cohn, and Samantha Breslin. Studied introductory programming education.</span></li>
+          <li><a href="https://www.linkedin.com/in/jccmelo/"><strong>Jean Melo</strong></a>:<br><span class="muted">Finished 2017; co-advised with Andrzej Wasowski. Studied variability bugs from a program and programmer perspective.</span></li>
+          <li><a href="https://www.linkedin.com/in/iagoabal/"><strong>Iago Abal</strong></a>:<br><span class="muted">Finished 2017; co-advised with Andrzej Wasowski. Developed the EBA bug finder that has found several bugs in Linux.</span></li>
+          <li><a href="https://www.linkedin.com/in/jakobgt/"><strong>Jakob G. Thomsen</strong></a>:<br><span class="muted">Finished 2013; co-advised with Erik Ernst. Developed code now running in Google Maps.</span></li>
+          <li><a href="https://sites.google.com/a/ic.ufal.br/marcio/home"><strong>Márcio Ribeiro</strong></a>:<br><span class="muted">Finished 2012; co-advised with Paulo Borba. Won “Best Ph.D. Dissertation of Brazil 2012” in Computer Science.</span></li>
+        </ul>
+    </div></section>
+
+    <section class="card section" id="numbers"><div class="inner"><h2>Numbers</h2>
+  <p><strong>Erdős Number: 4 (co-author path)</strong></p>
+  <p class="path">Paul Erdős <span class="step">-1-&gt;</span> Shmuel Zaks <span class="step">-2-&gt;</span> Dexter Kozen <span class="step">-3-&gt;</span> Michael Schwartzbach <span class="step">-4-&gt;</span> Claus Brabrand</p>
+
+  <p><strong>Bacon Number: 4 (co-actor path)</strong></p>
+  <p class="path">Kevin Bacon <span class="step">-1-&gt;</span> Stream Gardner <span class="step">-2-&gt;</span> Mads Koudal <span class="step">-3-&gt;</span> Richard Raskin <span class="step">-4-&gt;</span> Claus Brabrand</p>
+
+  <p><strong>Gauss Number: 12 (supervisee path)</strong></p>
+  <p class="path">Carl Friedrich Gauss <span class="step">-1-&gt;</span> Friedrich Wilhelm Bessel <span class="step">-2-&gt;</span> Heinrich Ferdinand Scherk <span class="step">-3-&gt;</span> Ernst Eduard Kummer <span class="step">-4-&gt;</span> Carl David Tolmé Runge <span class="step">-5-&gt;</span> Max Born <span class="step">-6-&gt;</span> Viktor Frederick Weisskopf <span class="step">-7-&gt;</span> Murray Gell-Mann <span class="step">-8-&gt;</span> Sidney Richard Coleman <span class="step">-9-&gt;</span> Leonard Emanuel Parker <span class="step">-10-&gt;</span> Prakash Panangaden <span class="step">-11-&gt;</span> Michael I. Schwartzbach <span class="step">-12-&gt;</span> Claus Brabrand</p>
+</div></section>
+
+    <section class="card section" id="languages"><div class="inner"><h2>Languages</h2>
+      <div class="langs">
+        <div class="lang"><span>🇩🇰 Danish</span><span>native</span></div><div class="lang"><span>🇬🇧 English</span><span>fluent</span></div><div class="lang"><span>🇫🇷 French</span><span>fluent</span></div><div class="lang"><span>🇧🇷 Portuguese</span><span>fluent</span></div><div class="lang"><span>🇸🇪 Swedish</span><span>intermediate</span></div><div class="lang"><span>🇪🇸 Spanish</span><span>intermediate</span></div><div class="lang"><span>🇮🇹 Italian</span><span>basics</span></div><div class="lang"><span>🇩🇪 German</span><span>basics</span></div>
+      </div>
+    </div></section>
+
+    <section class="card section" id="contact"><div class="inner contact">
+      <div><h2>Contact information</h2><p>Claus Brabrand<br>IT University of Copenhagen<br>Rued Langgaards Vej 7<br>DK-2300 Copenhagen S<br>Denmark</p><p class="muted"><span class="email">
+  brabrand<span class="dim">[at]</span>itu<span class="dim">[dot]</span>dk
+</span></p></div>
+      <img alt="Claus Brabrand at ITU" src="CB.jpg" />
+    </div></section>
+  </main>
+
+  <footer>
+    <div><span class="mark">&lt;/&gt;</span></div>
+    <div>Claus Brabrand · IT University of Copenhagen</div>
+  </footer>
+</body>
+</html>
